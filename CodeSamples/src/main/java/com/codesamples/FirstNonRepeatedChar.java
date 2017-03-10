@@ -35,6 +35,19 @@ public class FirstNonRepeatedChar {
 
 		return null;
 	}
+	
+	
+ 
+	 public static Character getNonRepChar(String str)
+	 {
+		 char carray[]=str.toCharArray();
+		 
+		 for (int i=0; i<str.length(); i++){
+			 if (str.lastIndexOf(carray[i]) == str.indexOf(carray[i]))
+				 return carray[i];
+		 }
+		 return null;
+	 }
 
 	    
 	    private static void findFirstNonRepeatingLetterJava8(String s, Consumer<Character> callback) {

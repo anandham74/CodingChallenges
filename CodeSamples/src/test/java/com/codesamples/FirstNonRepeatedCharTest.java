@@ -14,6 +14,7 @@ public class FirstNonRepeatedCharTest {
 		
 		Character c = new Character('i');
 		assertEquals(c, FirstNonRepeatedChar.nonRepeatedChar("airplane"));
+		assertEquals(c, FirstNonRepeatedChar.getNonRepChar("airplane"));
 		
 		
 		//Optional<Character> oc = 'i';
